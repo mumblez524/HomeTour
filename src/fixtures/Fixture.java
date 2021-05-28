@@ -9,12 +9,19 @@ public abstract class Fixture {
 	private String shortDesc;
 	private String longDesc;
 	
+	// Constructor
 	public Fixture(String name, String shortDesc, String longDesc) {
 		this.name = name;
 		this.shortDesc = shortDesc;
 		this.longDesc = longDesc;
 	}
 	
+	
+	/*
+	 ************************
+	 * Setters and Getters
+	 ************************
+	 */
 	public String getName() {
 		return name;
 	}

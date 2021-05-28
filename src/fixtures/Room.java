@@ -26,7 +26,6 @@ public class Room extends Fixture {
 	}
 	
 	
-	
 	/*
 	 *****************************************
 	 * Setters, Getters, and Extra Functions

@@ -43,7 +43,7 @@ public class RoomManager {
 				+ "You realize you have food stuck in your teeth from that salad you had...\n"
 				+ "\"Was that there the whole time????\" you think to yourself as you rub it away "
 				+ "thinking nobody else saw.\n\n"
-				+ "\tThey saw it...");
+				+ "\tDont fool yourself. They saw it...");
 		Room basement = new Room("The Basement", "A pitch black basement",
 				"It is pitch black in here. You take a curious step in without any light and " 
 				+ "promptly tumble down the stairs.");
@@ -53,7 +53,7 @@ public class RoomManager {
 		 */
 		Item coat = new Item("expensive coat", "an expensive coat", "You try it on. I'm sure the owner "
 				+ "won't mind."
-				+ "You start posing like superman and the back rips."
+				+ "You start posing like a bodybuilder and the back rips."
 				+ "\"Oops...\"");
 		Item furby = new Item("furby", "An odd owl toy", "Looks like this puppy has been through the "
 				+ "ringer. Don't think the kid will notice if it goes missing... (<.<\") (\">.>)");

@@ -56,25 +56,28 @@ public class Main {
 	 */
 	//Prints Room information
 	private static void printRoom(Player player) {
-		System.out.println("\n" + player.getCurrentRoom().getName() + "\n\n"
+		System.out.println("________________________________________________________________________________________________________________________________\n" 
+				+ player.getCurrentRoom().getName() + "\n\n"
 				+ player.getCurrentRoom().getLongDesc());
 
 		if(player.getCurrentRoom().getItemList().size() != 0) {
 			printItems(player);
 		}
 		printExits(player);
+		
+		System.out.println("________________________________________________________________________________________________________________________________");
 
 	}
 	
 	private static void printItems(Player player) {
-		System.out.println("\nItems:");
+		System.out.println("\nRoom Items:");
 		for(int i = 0; i < player.getCurrentRoom().getItemList().size(); i++) {
 			Item item = player.getCurrentRoom().getItemList().get(i);
 			System.out.println(item.getShortDesc());
 		}
 	}
 	private static void printExits(Player player) {
-		System.out.println("\nExits:");
+		System.out.println("\nRoom Exits:");
 		for(Map.Entry<String, Room> e : player.getCurrentRoom().getExits().entrySet()) {
 			System.out.println(e.getKey() + ": " + e.getValue().getShortDesc());
 		}
@@ -82,31 +85,35 @@ public class Main {
 	
 	// Displays the current Player inventory
 	private static void displayInventory(Player player){
-		System.out.println("\nInventory:");
+		System.out.println("\n________________________________________________________________________________________________________________________________\nInventory:");
 		for(int i = 0; i < player.getBackpack().size(); i++) {
 			System.out.println(player.getBackpack().get(i).getName());
 		}
+		System.out.println("________________________________________________________________________________________________________________________________");
 	}
 	
 	// Displays the longDesc of an Item
-	private static void getDescription(Player player){
-		System.out.println("\nDescription of " + player.getCurrentRoom().getItemList().get(0).getName() + ":\n" 
+	private static void getInteraction(Player player){
+		System.out.println("\n" 
+				+ player.getCurrentRoom().getItemList().get(0).getName() + ":\n" 
 				+ player.getCurrentRoom().getItemList().get(0).getLongDesc());
 	}
 	
 	// Prints the Commands a user may use as well as shortly describing what they do
 	private static String help() {
-		return "Controls:\n"
+		return "________________________________________________________________________________________________________________________________\n"
+				+ "Controls:\n"
 				+ "go: \tto travel to a different room type \"go\" followed by the intended direction\n"
 				+ "\tdirections: \"north\", \"east\", \"south\", \"west\"\n"
 				+ "\tex: go north\n"
-				+ "take: \tto pick up an item and add it to your players inventory\n"
+				+ "take: \tpick up the item in the room and add it to your players inventory\n"
 				+ "inventory: displays the items in your inventory\n"
-				+ "description: displays full description of item\n"
+				+ "interact:  interact with the item in the room\n"
 				+ "\tex: description spork\n"
 				+ "help: \tif you have forgotten the controls type \"help\"\n"
 				+ "exit: \tto exit the house type \"exit\". We don't mind. It's not like "
-				+ "we're lonely here or anything...";
+				+ "we're lonely here or anything...\n"
+				+ "________________________________________________________________________________________________________________________________";
 	}
 
 	
@@ -117,8 +124,8 @@ public class Main {
 	 ***************************
 	 */
 	private static String[] collectInput() {
+		System.out.print("\n> ");
 		String input = scan.nextLine();
-		
 		String[] phrase = input.split(" ");
 		return phrase;
 	}
@@ -155,8 +162,8 @@ public class Main {
 				displayInventory(player);
 				again(player);
 				break;
-			case "description":
-				getDescription(player);
+			case "interact":
+				getInteraction(player);
 				again(player);
 				break;
 			case "help":
@@ -184,7 +191,7 @@ public class Main {
 			return true;
 		case "inventory":
 			return true;
-		case "description":
+		case "interact":
 			return true;
 		case "help":
 			return true;

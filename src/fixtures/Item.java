@@ -8,7 +8,7 @@ package fixtures;
 
 public class Item extends Fixture{
 	
-	// Class Constructor
+	// Constructor
 	public Item(String name, String shortDesc, String longDesc) {
 		super(name, shortDesc, longDesc);
 	}
