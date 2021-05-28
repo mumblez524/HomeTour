@@ -15,7 +15,15 @@ public class Player {
 	private Room currentRoom;
 	//Holds the Players Items collected throughout their journey
 	private List<Item> backpack = new ArrayList<>();
-
+	
+	
+	
+	/*
+	 *******************************************
+	 * Setters, Getters, and Extra Functions
+	 *******************************************
+	 */
+	
 	/*
 	 * Current Room Functions
 	 */

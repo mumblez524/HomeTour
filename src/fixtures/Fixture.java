@@ -1,7 +1,7 @@
 package fixtures;
 
 /*
- * Used as a base for anything that can be looked at or interacted with
+ * Used as a base for anything that can be looked at or interacted with inside the Home
  */
 
 public abstract class Fixture {

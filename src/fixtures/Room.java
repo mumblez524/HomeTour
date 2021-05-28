@@ -6,37 +6,31 @@ import java.util.Map;
 import java.util.TreeMap;
 
 /*
- * Represents a room in the house. 
+ * Represents an individual Room in the house. 
  * 
- * Extends Fixture so will inherit the descriptive properties
+ * Extends Fixture
  */
 
 public class Room extends Fixture {
-	/*
-	 * Creates a TreeMap to hold exits for this Room.
-	 * 
-	 * String: 	Holds the direction of Room adjacent to this Room
-	 * Room: 	Holds a Room object adjacent to this Room
-	 */
+	
+	// Creates a TreeMap to hold exits for this Room.
 	private Map<String, Room> exits = new TreeMap<>();
-	/*
-	 * Holds all Items the player may interact with in a Room
-	 */
+	
+	//Holds all Items the player may interact with in a Room
 	private List<Item> items = new ArrayList<>();
 	
-	/*
-	 ******************
-	 * Constructor
-	 ******************
-	 */
+	
+	// Class Constructor
 	public Room(String name, String shortDesc, String longDesc) {
 		super(name, shortDesc, longDesc);
 	}
 	
+	
+	
 	/*
-	 ***********************
-	 * Setters and Getters
-	 ***********************
+	 *****************************************
+	 * Setters, Getters, and Extra Functions
+	 *****************************************
 	 */
 	
 	/*
@@ -56,7 +50,7 @@ public class Room extends Fixture {
 	}
 	
 	/*
-	 * TreeMap of exits and their directions
+	 * TreeMap of exits and their corresponding directions
 	 */
 	//Add an exit adjacent to the Room
 	public void setExits(String direction, Room room) {

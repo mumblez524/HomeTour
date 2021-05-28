@@ -27,42 +27,40 @@ public class RoomManager {
 		 * All rooms throughout the Home
 		 */
 		Room foyer = new Room("The Foyer", "a small foyer",
-				"The small entryway of a neo-colonial house.\n"
+				"The small entryway of a neo-colonial house."
 				+ "To the north is a small room, where you can see a piano.\n"
 				+ "A dining room is open to the south, where a large table can be seen.\n"
-				+ "The hardwood floor leads west into doorway, next to a staircase that leads down to a basement floor.\n");
+				+ "The hardwood floor leads west into doorway, next to a staircase that leads down to a basement floor.");
 		Room playRoom = new Room("The Playroom", "A large playroom",
 				"The playroom is littered with toys all over and a huge TV with consoles connected all"
 				+ "over.\n"
 				+ "You see child no older than twelve years of age playing GTA5 screaming "
 				+ "obscenities over the mic.\n"
 				+ "You feel like a quick escape is the best option here.\n"
-				+ "To the south is the foyer.\n");		
+				+ "To the south is the foyer.");		
 		Room diningRoom = new Room("The Dining Room", "A large dining room",
 				"The room is tidy and the tiled walls shine like mirrors, clear enough to see " + "yourself in.\n"
 				+ "You realize you have food stuck in your teeth from that salad you had...\n"
 				+ "\"Was that there the whole time????\" you think to yourself as you rub it away "
 				+ "thinking nobody else saw.\n\n"
-				+ "\tThey saw it...\n");
+				+ "\tThey saw it...");
 		Room basement = new Room("The Basement", "A pitch black basement",
 				"It is pitch black in here. You take a curious step in without any light and " 
-				+ "promptly tumble down the stairs.\n");
+				+ "promptly tumble down the stairs.");
 		
 		/*
 		 * All items found throughout the Home
 		 */
-		Item coat = new Item("coat", "an expensive coat", "\nYou should try it on. I'm sure the owner "
-				+ "won't mind.\n"
-				+ "You start posing like superman and the back rips.\n"
-				+ "\"Oops...\"\n"
-				+ "You put it back, careful to hide the tears from anyone just passing by.\n");
-		Item furby = new Item("furby", "An odd owl toy", "\nLooks like this puppy has been through the "
-				+ "ringer. Don't think the kid will notice if it goes missing... <.<' >.>'\n"
-				+ "*you eagerly stuff this treasure in your backpack thinking nobody noticed*\n");
-		Item spork = new Item("spork", "a widdle sporky", "\nGood for any kind of food slippery or slimey.\n");
-		Item darkEscence = new Item("blob", "a dark blob", "\nYou get this weird scream in your head as "
+		Item coat = new Item("expensive coat", "an expensive coat", "You try it on. I'm sure the owner "
+				+ "won't mind."
+				+ "You start posing like superman and the back rips."
+				+ "\"Oops...\"");
+		Item furby = new Item("furby", "An odd owl toy", "Looks like this puppy has been through the "
+				+ "ringer. Don't think the kid will notice if it goes missing... (<.<\") (\">.>)");
+		Item spork = new Item("spork", "a widdle sporky", "Good for any kind of food slippery or slimey.");
+		Item darkEscence = new Item("blob", "a dark blob", "You get this weird scream in your head as "
 				+ "you stare into it. I'm sure that doesn't mean anything serious.\n"
-				+ "Nothing out of the ordinary here. Nope. Nope. Nope.\n");
+				+ "Nothing out of the ordinary here. Nope. Nope. Nope.");
 		/*
 		 * Stick the Home together
 		 * 
